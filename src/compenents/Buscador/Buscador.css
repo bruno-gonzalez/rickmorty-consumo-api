@@ -1,0 +1,27 @@
+.form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: row wrap;
+   margin: 1em 0;
+   width: 90vw;
+}
+
+.input {
+   width: 60%;
+   max-width: 60%;
+   height: 30px;
+   font-size: 1em;
+   background-color: #414141;
+   border: 1px solid #303030;
+   padding: 0 .5em;
+   color: #fff;
+}
+
+.btnSearch {
+   cursor: pointer;
+   background: transparent;
+   padding: .5em;
+   border: none;
+   color: #fff;
+}
