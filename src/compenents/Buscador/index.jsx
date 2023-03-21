@@ -12,7 +12,7 @@ const Buscador = ({busca, setBusca, buscador}) => {
                onChange={(evento) => setBusca(evento.target.value)}
             />
             <button className="btnSearch" type="submit">
-               <FaSearch size={30}/>
+               <FaSearch size={20}/>
             </button>
         </form>
    )
