@@ -16,6 +16,7 @@ const [busca, setBusca] = useState('');
 useEffect(() => {
    axios.get(`https://rickandmortyapi.com/api/character/`)
    .then(resposta => {
+      console.log(resposta)
       setPersonagens(resposta.data.results)
       setProximaPag(resposta.data.info.next)
       setAnteriorPag(resposta.data.info.prev)
@@ -51,9 +52,9 @@ const prevUrl = () => {
 const buscador = (name, evento) => {
    evento.preventDefault()
    axios.get(`https://rickandmortyapi.com/api/character/?name=${name}`)
-  .then(resposta => setPersonagens(resposta.data.results))
-  .catch(erro => console.log(erro))
-  setBusca("")
+   .then(resposta => setPersonagens(resposta.data.results))
+   .catch(erro => console.log(erro))
+   setBusca("")
 }
 
   return (

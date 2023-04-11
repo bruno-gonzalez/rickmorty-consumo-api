@@ -3,7 +3,7 @@
    border: none;
    border-radius: 10px;
    padding: 1em;
-   background-color: #414141;
+   background-color: #303030;
    color: #fff;
    display: flex;
    align-items: center;
@@ -11,6 +11,13 @@
    flex-flow: column;
    text-align: center;
    max-width: 300px;
+   box-shadow: 1px 2px 4px #ffffff1d, -1px -2px 4px #ffffff1d;
+}
+
+.card:hover {
+   transition: .3s;
+   background-color: #30303097;
+   box-shadow: -1px -2px 4px #992cff, 1px 2px 4px #6dc6fe;
 }
 
 .nome {
